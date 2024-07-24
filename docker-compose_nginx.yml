@@ -1,0 +1,12 @@
+services:
+  nginx1:
+    image: nginx:latest
+    container_name: my-nginx1
+    ports:
+      - "80:80"
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge
